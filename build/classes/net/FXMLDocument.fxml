@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="833.0" prefWidth="737.0" style="-fx-background-color: black;"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.FXMLDocumentController">
+   <children>
+      <Text fill="#1a00ff" layoutX="23.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Network Status" textAlignment="CENTER" wrappingWidth="691.13671875">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ip_Handler" editable="false" layoutX="239.0" layoutY="340.0" prefHeight="25.0" prefWidth="457.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="Button" layoutX="180.0" layoutY="745.0" mnemonicParsing="false" onMouseClicked="#c" text="Run Network Report" textAlignment="CENTER" textFill="#f80000">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Button>
+      <TextField fx:id="ip_hosts" editable="false" layoutX="239.0" layoutY="414.0" prefHeight="25.0" prefWidth="457.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="get_keepalive" editable="false" layoutX="239.0" layoutY="496.0" prefHeight="25.0" prefWidth="457.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Channel_View" editable="false" layoutX="244.0" layoutY="585.0" prefHeight="25.0" prefWidth="457.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="time_ran" editable="false" layoutX="244.0" layoutY="664.0" prefHeight="25.0" prefWidth="457.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Text fill="RED" layoutX="-4.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local Machine IP Address; ex(IP:Port)" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="-4.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modem/Host IP Address ex(IP:Port)" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="4.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Status:" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="4.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Channel:" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="4.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This report was ran at:" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="47.0" layoutY="747.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" text="Clear" textFill="#1a5dff">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="747.0" mnemonicParsing="false" onMouseClicked="#onSave" prefHeight="71.0" prefWidth="137.0" text="Save" textFill="#34ff00">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <Text fill="#1a00ff" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the following information" textAlignment="CENTER" wrappingWidth="691.13671875">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="14.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Host IP Address:" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="14.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter desired port:" textAlignment="CENTER" wrappingWidth="230.13671875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Socket_Host" layoutX="279.0" layoutY="64.0" prefHeight="65.0" prefWidth="429.0">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <TextField fx:id="Socket_Port" layoutX="279.0" layoutY="169.0" prefHeight="71.0" prefWidth="429.0">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
